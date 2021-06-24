@@ -11,12 +11,12 @@ local types = import 'lib/types.libsonnet';
 		},
 	],
 	fields: { 
-		_id: field("id", type=types.OBJECT_ID),
-		cb: field("created_by", type=types.STRING, required=true),
-		ct: field("created_time", type=types.DATE),
-		dmpcfoc: field("default_max_processing_cnt_for_one_cs", type=types.INT),
 		gn: field("group_name", type=types.STRING, required=true),
-		lu: field("last_updated", type=types.DATE),
+		cb: field("created_by", type=types.STRING, required=true),
+		dmpcfoc: field("default_max_processing_cnt_for_one_cs", type=types.INT),
 		s: field("status", type=types.INT),
+		ct: field("created_time", type=types.DATE),
+		lu: field("last_updated", type=types.DATE),
+		_id: field("id", type=types.OBJECT_ID),
 	},
 }
