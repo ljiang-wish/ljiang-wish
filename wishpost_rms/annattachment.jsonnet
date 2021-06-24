@@ -3,8 +3,8 @@ local types = import 'lib/types.libsonnet';
 {
 	alias: "AnnAttachment",
 	fields: { 
-		af: field("attach_url", type=types.URL),
 		an: field("attach_name", type=types.STRING),
+		af: field("attach_url", type=types.URL),
 	},
 	annotations: { 
 		typeOnly: true,
