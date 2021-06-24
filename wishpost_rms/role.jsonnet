@@ -9,9 +9,9 @@ local types = import 'lib/types.libsonnet';
 	],
 	fields: { 
 		_id: field("role_name", type=types.STRING, required=true),
-		bp: field("permissions", type=types.LIST(types.INT)),
 		d: field("description", type=types.STRING),
-		lu: field("last_updated", type=types.DATE),
+		bp: field("permissions", type=types.LIST(types.INT)),
 		s: field("status", type=types.INT),
+		lu: field("last_updated", type=types.DATE),
 	},
 }
